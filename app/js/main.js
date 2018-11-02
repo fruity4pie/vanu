@@ -16,7 +16,7 @@ $(document).ready(function() {
   })
 
   //Lang
-  let lang = $('.lang');
+  let lang = $('.lang .lang-v');
   lang.on('click', function(e) {
     e.preventDefault();
     $(this).parent().find('.lang-h').toggleClass('active');
