@@ -16,10 +16,10 @@ $(document).ready(function() {
   })
 
   //Lang
-  let lang = $('.lang .lang-v');
+  let lang = $('.lang .lang-v a');
   lang.on('click', function(e) {
     e.preventDefault();
-    $(this).parent().find('.lang-h').toggleClass('active');
+    $(this).parent().parent().find('.lang-h').toggleClass('active');
   })
 
   //MobileMenu
