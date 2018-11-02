@@ -12050,6 +12050,8 @@ input {
     background: linear-gradient(113.1deg, rgba(122, 220, 232, 0.52) 9.65%, rgba(122, 220, 232, 0) 45.45%), #59B1BC; }
     .order_2 .row:first-of-type p {
       margin-bottom: none; }
+    .order_2 .t-b {
+      padding-top: 45px; }
 
 .faq {
   padding: 80px 0 100px; }
@@ -12255,6 +12257,15 @@ input {
     .b-blog a:hover {
       color: #59B1BC;
       text-decoration: underline; }
+
+.representative {
+  padding: 90px 0; }
+  .representative h2 {
+    margin-bottom: 35px; }
+  .representative h3 {
+    margin-bottom: 70px; }
+  .representative p:not(:last-child) {
+    margin-bottom: 20px; }
 
 @media screen and (max-width: 991px) {
   .header__top {
