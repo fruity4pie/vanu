@@ -60,6 +60,8 @@ input
   width: 100%
   &::placeholder
     color: rgba(46, 46, 46, 0.45)
+  &:focus
+    outline-color: #000
 
 .logo
   text-transform: uppercase
@@ -522,15 +524,19 @@ input
   p
     font-size: 17px
     font-weight: 600
+    line-height: 27px
 
   &_proc
     padding: 170px 0 120px
+  &_heav
+    padding: 170px 0 115px
+    .b-c
+      margin-bottom: 55px
 
 .license
   padding: 77px 0 65px
   background: #fff
   border-bottom: 1px solid rgba(46, 46, 46, 0.15)
-
   .t-b
     &2
       text-align: center
@@ -571,14 +577,16 @@ input
       &:last-of-type
         font-size: 11px
         font-weight: 600
-
   p
     &:not(:last-of-type)
       margin-bottom: 10px
-
   .cyan
     margin-bottom: 30px
     color: #fff
+  &_2
+    padding-bottom: 25px
+    border: none
+
 
 .benefits
   padding: 80px 0 90px
@@ -691,7 +699,7 @@ input
   padding: 100px 0 130px
   .row
     &:first-of-type
-      p
+      & .col-12 p
         margin-bottom: 65px
   .row
     &:nth-of-type(2)
@@ -710,6 +718,8 @@ input
     li
       &:not(:last-of-type)
         margin-bottom: 20px
+  &_2
+    padding: 35px 0 45px
 
 .order
   background: url('../img/orbg.png') no-repeat center/cover #000
@@ -729,6 +739,12 @@ input
     margin: 0 auto
     &:not(:last-of-type)
       margin-bottom: 20px
+  &_2
+    background: linear-gradient(113.1deg, rgba(122, 220, 232, 0.52) 9.65%, rgba(122, 220, 232, 0) 45.45%), #59B1BC
+    .row
+      &:first-of-type
+        p
+          margin-bottom: none
 
 .faq
   padding: 80px 0 100px
@@ -821,5 +837,39 @@ input
     li
       &:not(:last-of-type)
         margin-bottom: 15px
+
+.faces
+  padding: 40px 0 65px
+  h2
+    margin-bottom: 60px
+  &-b
+    &-img, &-cont
+      max-width: 233px
+      width: 100%
+      margin: 0 auto
+    &-img
+      img
+        position: relative
+        bottom: -2px
+        width: 100%
+    &-cont
+      padding: 20px 0
+      +frn
+      justify-content: center
+      color: #fff
+      font-weight: 600
+      align-items: center
+      background: #2FBBCD
+      box-shadow: 0px 24px 40px rgba(1, 107, 120, 0.3)
+      border-radius: 0px 0px 3px 3px
+
+.experience
+  padding: 60px 0 100px
+  h2
+    margin-bottom: 50px
+  .y-tube
+    margin-bottom: 30px
+
+
 
 @import media
