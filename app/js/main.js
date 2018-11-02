@@ -58,4 +58,31 @@ $(document).ready(function() {
 		mobPhone.parent().find('.mob-phone__sub').removeClass('active');
 	})
 
+  //PopUp
+  let btnTrigger = $('.js-popup');
+  let popUp = $('.b-popup');
+  let btnPopUpClose = $('.b-popup__close')
+
+  btnTrigger.on('click', function(e) {
+    e.preventDefault();
+    popUp.addClass('active');
+    $('body').addClass('active');
+  })
+
+  btnPopUpClose.on('click', function(e) {
+    e.preventDefault();
+    popUp.removeClass('active');
+    $('body').removeClass('active');
+  })
+
+  popUp.on('click', function(e) {
+    if($(e.target).hasClass('b-popup')) {
+      $(this).removeClass('active');
+      $('body').removeClass('active');
+    } else {
+      e.stopImmediatePropagation();
+    }
+  })
+
+
 })

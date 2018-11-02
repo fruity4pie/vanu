@@ -12135,6 +12135,58 @@ input {
   .experience .y-tube {
     margin-bottom: 30px; }
 
+.b-popup {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(24, 49, 52, 0.75)), to(rgba(24, 49, 52, 0.75)));
+  background: linear-gradient(0deg, rgba(24, 49, 52, 0.75), rgba(24, 49, 52, 0.75));
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  z-index: 100; }
+  .b-popup.active {
+    top: 0; }
+  .b-popup-c {
+    max-width: 605px;
+    width: 100%;
+    padding: 65px 10px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 34px 64px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 34px 64px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    position: relative; }
+    .b-popup-c h3 {
+      text-align: center;
+      margin-bottom: 40px; }
+    .b-popup-c form input {
+      margin: 0 auto;
+      display: block; }
+      .b-popup-c form input:not(:last-of-type) {
+        margin-bottom: 20px; }
+  .b-popup__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #2E2E2E;
+    font-size: 25px;
+    cursor: pointer; }
+
 @media screen and (max-width: 991px) {
   .header__top {
     -webkit-box-pack: justify;

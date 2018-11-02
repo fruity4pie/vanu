@@ -870,6 +870,49 @@ input
   .y-tube
     margin-bottom: 30px
 
+.b-popup
+  background: linear-gradient(0deg, rgba(24, 49, 52, 0.75), rgba(24, 49, 52, 0.75))
+  position: fixed
+  top: -100%
+  left: 0
+  width: 100%
+  height: 100%
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+  justify-content: center
+  transition: all .3s
+  z-index: 100
+  &.active
+    top: 0
+  &-c
+    max-width: 605px
+    width: 100%
+    padding: 65px 10px
+    background: #FFFFFF
+    box-shadow: 0px 34px 64px rgba(0, 0, 0, 0.4)
+    border-radius: 3px
+    position: relative
+    h3
+      text-align: center
+      margin-bottom: 40px
+    form
+      input
+        margin: 0 auto
+        display: block
+        &:not(:last-of-type)
+          margin-bottom: 20px
+  &__close
+    position: absolute
+    top: 20px
+    right: 20px
+    color: #2E2E2E
+    font-size: 25px
+    cursor: pointer
+
+
 
 
 @import media
