@@ -223,7 +223,7 @@ input
   z-index: 100
 
   &__c
-    max-width: 1170px
+    max-width: 1140px
     width: 100%
     margin: 0 auto
     padding: 0 15px
@@ -425,6 +425,28 @@ input
         &:not(:last-of-type)
           margin-bottom: 15px
 
+.b-c
+	display: flex
+	flex-flow: row wrap
+	margin-bottom: 20px
+  font-size: 11px
+  font-weight: 600
+	&__item
+		position: relative
+		&:not(:last-of-type)
+			span
+        text-decoration: underline
+      margin-right: 25px
+			&:before
+				content: '/'
+				position: absolute
+				right: -15px
+				color: #ffffff
+				opacity: 0.5
+				font-size: 13px
+  a
+    color: #ffffff !important
+    opacity: 0.5
 
 .btn
   border: none
@@ -468,6 +490,9 @@ input
   p
     font-size: 17px
     font-weight: 600
+
+  &_proc
+    padding-bottom: 120px
 
 .license
   padding: 77px 0 65px

@@ -19,7 +19,7 @@ $(document).ready(function() {
   let lang = $('.lang');
   lang.on('click', function(e) {
     e.preventDefault();
-    lang.find('.lang-h').toggleClass('active');
+    $(this).find('.lang-h').toggleClass('active');
   })
 
   //MobileMenu
