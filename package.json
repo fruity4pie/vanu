@@ -13,7 +13,7 @@
     "@babel/preset-env": "*",
     "browser-sync": "*",
     "del": "*",
-    "gulp": "*",
+    "gulp": "3.9.1",
     "gulp-autoprefixer": "*",
     "gulp-babel": "*",
     "gulp-concat": "*",

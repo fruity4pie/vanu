@@ -8,7 +8,7 @@ rename       = require('gulp-rename'), // Подключаем библиоте�
 sass         = require('gulp-sass'), //Подключаем Sass пакет,
 uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
 babel        = require('gulp-babel'),
-rigger = require('gulp-rigger');
+rigger 			 = require('gulp-rigger');
 
 
 function onError(err) {
@@ -26,7 +26,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('rigger', function () {
-	return gulp.src('app/templates/**/*.html') //Выберем файлы по нужному пути
+	return gulp.src('app/templates/*.html') //Выберем файлы по нужному пути
 		.pipe(rigger()) //Прогоним через rigger
 		.pipe(gulp.dest('app/')) //Выплюнем их в папку build
 		.pipe(browserSync.reload({stream: true})); //И перезагрузим наш сервер для обновлений
