@@ -11760,6 +11760,21 @@ input {
   .y-tube img {
     width: 100%; }
 
+.contacts {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 40px 0 50px 40px;
+  background: rgba(34, 68, 72, 0.56);
+  border-radius: 3px;
+  min-height: 270px; }
+  .contacts li img {
+    vertical-align: middle;
+    margin-right: 15px; }
+  .contacts li:not(:last-of-type) {
+    margin-bottom: 20px; }
+  .contacts i {
+    font-size: 15px; }
+
 .btn {
   border: none;
   padding: 0;
@@ -12034,8 +12049,8 @@ input {
   background: url("../img/orbg.png") no-repeat center/cover #000;
   color: #fff;
   padding: 100px 0 125px; }
-  .order .row:first-of-type {
-    margin-bottom: 70px; }
+  .order .row:first-of-type p {
+    margin-bottom: 65px; }
   .order .row:nth-of-type(2) p {
     margin-bottom: 30px; }
   .order h2 {
@@ -12051,7 +12066,11 @@ input {
     .order_2 .row:first-of-type p {
       margin-bottom: none; }
     .order_2 .t-b {
-      padding-top: 45px; }
+      padding-top: 45px;
+      padding-right: 20px; }
+  .order_3 p {
+    font-weight: 600;
+    margin-bottom: 25px !important; }
 
 .faq {
   padding: 80px 0 100px; }
@@ -12136,38 +12155,40 @@ input {
       margin-bottom: 15px; }
 
 .faces {
-  padding: 40px 0 65px; }
+  padding: 40px 0 25px; }
   .faces h2 {
     margin-bottom: 60px; }
-  .faces-b-img, .faces-b-cont {
-    max-width: 233px;
-    width: 100%;
-    margin: 0 auto; }
-  .faces-b-img img {
-    position: relative;
-    bottom: -2px;
-    width: 100%; }
-  .faces-b-cont {
-    padding: 20px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #fff;
-    font-weight: 600;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #2FBBCD;
-    -webkit-box-shadow: 0px 24px 40px rgba(1, 107, 120, 0.3);
-            box-shadow: 0px 24px 40px rgba(1, 107, 120, 0.3);
-    border-radius: 0px 0px 3px 3px; }
+  .faces-b {
+    margin-bottom: 40px; }
+    .faces-b-img, .faces-b-cont {
+      max-width: 233px;
+      width: 100%;
+      margin: 0 auto; }
+    .faces-b-img img {
+      position: relative;
+      bottom: -2px;
+      width: 100%; }
+    .faces-b-cont {
+      padding: 20px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: #fff;
+      font-weight: 600;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: #2FBBCD;
+      -webkit-box-shadow: 0px 24px 40px rgba(1, 107, 120, 0.3);
+              box-shadow: 0px 24px 40px rgba(1, 107, 120, 0.3);
+      border-radius: 0px 0px 3px 3px; }
 
 .experience {
   padding: 60px 0 100px; }
@@ -12180,7 +12201,7 @@ input {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(24, 49, 52, 0.75)), to(rgba(24, 49, 52, 0.75)));
   background: linear-gradient(0deg, rgba(24, 49, 52, 0.75), rgba(24, 49, 52, 0.75));
   position: fixed;
-  top: -100%;
+  top: -100vh;
   left: 0;
   width: 100%;
   height: 100%;
@@ -12200,9 +12221,11 @@ input {
           justify-content: center;
   -webkit-transition: all .3s;
   transition: all .3s;
-  z-index: 100; }
+  z-index: 100;
+  opacity: 0; }
   .b-popup.active {
-    top: 0; }
+    top: 0;
+    opacity: 1; }
   .b-popup-c {
     max-width: 605px;
     width: 100%;
@@ -12268,17 +12291,92 @@ input {
     margin-bottom: 20px; }
 
 @media screen and (max-width: 991px) {
-  .header__top {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .header__top .socials, .header__top .lang {
+  .a-pr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+  .header {
+    padding-top: 15px; }
+    .header__top {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border: none;
+      padding: 0; }
+      .header__top .socials, .header__top .lang {
+        display: none; }
+    .header__bot {
       display: none; }
-  .header__bot {
-    display: none; }
   .mob-burg, .mob-phone {
     display: block; }
   .mob-burg .lang {
     display: block; }
   .mob-phone .socials {
-    display: block; } }
+    display: block; }
+  .first {
+    padding-top: 125px; }
+    .first_tnx {
+      padding: 0; } }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1; }
+  h3 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600; }
+  p {
+    font-size: 14px;
+    line-height: 22px; }
+  .ben li {
+    font-size: 14px;
+    line-height: 22px; }
+  .license, .benefits, .examples, .details, .conditions {
+    padding: 40px 0; }
+  .benefits h2 {
+    margin-bottom: 40px; }
+  .benefits .ben li:not(:last-of-type) {
+    margin-bottom: 20px; }
+  .details h2 {
+    margin-bottom: 15px; }
+  .details h3 {
+    margin-bottom: 30px; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1; }
+  h3 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600; }
+  p {
+    font-size: 14px;
+    line-height: 22px; }
+  .ben li {
+    font-size: 14px;
+    line-height: 22px; }
+  .license, .benefits, .examples, .details, .conditions {
+    padding: 40px 0; }
+  .benefits h2 {
+    margin-bottom: 40px; }
+  .benefits .ben li:not(:last-of-type) {
+    margin-bottom: 20px; }
+  .details h2 {
+    margin-bottom: 15px; }
+  .details h3 {
+    margin-bottom: 30px; } }

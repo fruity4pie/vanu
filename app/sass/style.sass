@@ -487,6 +487,22 @@ input
   img
     width: 100%
 
+.contacts
+  font-size: 13px
+  font-weight: 600
+  padding: 40px 0 50px 40px
+  background: rgba(34, 68, 72, 0.56)
+  border-radius: 3px
+  min-height: 270px
+  li
+    img
+      vertical-align: middle
+      margin-right: 15px
+    &:not(:last-of-type)
+      margin-bottom: 20px
+  i
+    font-size: 15px
+
 .btn
   border: none
   padding: 0
@@ -758,7 +774,8 @@ input
   padding: 100px 0 125px
   .row
     &:first-of-type
-      margin-bottom: 70px
+      p
+        margin-bottom: 65px
     &:nth-of-type(2)
       p
         margin-bottom: 30px
@@ -778,6 +795,11 @@ input
           margin-bottom: none
     .t-b
       padding-top: 45px
+      padding-right: 20px
+  &_3
+    p
+      font-weight: 600
+      margin-bottom: 25px !important
 
 .faq
   padding: 80px 0 100px
@@ -872,10 +894,11 @@ input
         margin-bottom: 15px
 
 .faces
-  padding: 40px 0 65px
+  padding: 40px 0 25px
   h2
     margin-bottom: 60px
   &-b
+    margin-bottom: 40px
     &-img, &-cont
       max-width: 233px
       width: 100%
@@ -906,7 +929,7 @@ input
 .b-popup
   background: linear-gradient(0deg, rgba(24, 49, 52, 0.75), rgba(24, 49, 52, 0.75))
   position: fixed
-  top: -100%
+  top: -100vh
   left: 0
   width: 100%
   height: 100%
@@ -918,8 +941,10 @@ input
   justify-content: center
   transition: all .3s
   z-index: 100
+  opacity: 0
   &.active
     top: 0
+    opacity: 1
   &-c
     max-width: 605px
     width: 100%
