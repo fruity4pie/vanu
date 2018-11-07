@@ -11810,6 +11810,8 @@ input {
     color: #fff; }
   .btn_320 {
     max-width: 320px; }
+  .btn_370 {
+    max-width: 370px; }
 
 .first {
   padding: 182px 0 50px;
@@ -12289,6 +12291,222 @@ input {
     margin-bottom: 70px; }
   .representative p:not(:last-child) {
     margin-bottom: 20px; }
+
+.art-c {
+  padding: 100px 0 70px; }
+  .art-c h2, .art-c h3 {
+    margin-bottom: 25px; }
+  .art-c p:not(:last-child) {
+    margin-bottom: 40px; }
+  .art-c ol, .art-c ul {
+    line-height: 24px; }
+    .art-c ol:not(:last-child), .art-c ul:not(:last-child) {
+      margin-bottom: 80px; }
+    .art-c ol li, .art-c ul li {
+      position: relative;
+      padding-left: 60px; }
+      .art-c ol li::before, .art-c ul li::before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        background: #59B1BC;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: -ms-flex;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #fff;
+        font-weight: 600; }
+      .art-c ol li:not(:last-child), .art-c ul li:not(:last-child) {
+        margin-bottom: 20px; }
+  .art-c ul li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    left: 30px;
+    top: 8px; }
+  .art-c iframe {
+    float: left;
+    margin-right: 50px; }
+    .art-c iframe:not(:last-child) {
+      margin-bottom: 60px; }
+  .art-c table:not(:last-child) {
+    margin-bottom: 80px; }
+  .art-c table thead {
+    background: rgba(89, 177, 188, 0.31);
+    padding: 10px 0; }
+    .art-c table thead th {
+      font-size: 13px;
+      font-weight: 600; }
+  .art-c table th, .art-c table td {
+    border: none;
+    line-height: 17px;
+    padding: 10px 0 10px 20px;
+    vertical-align: middle; }
+  .art-c table tr th {
+    max-width: 115px; }
+  .art-c table tbody tr:nth-of-type(2n) {
+    background: rgba(46, 46, 46, 0.03); }
+  .art-c table tbody tr td:first-of-type {
+    width: 200px;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 600; }
+  .art-c table tfoot {
+    background: rgba(89, 177, 188, 0.31); }
+    .art-c table tfoot td {
+      padding: 20px 0 17px 20px;
+      font-size: 17px;
+      line-height: 23px;
+      font-weight: 600; }
+  .art-c blockquote {
+    background: rgba(89, 177, 188, 0.13);
+    padding: 50px;
+    line-height: 27px;
+    font-size: 17px;
+    color: #2E2E2E;
+    font-weight: 600;
+    position: relative; }
+    .art-c blockquote:not(:last-child) {
+      margin-bottom: 90px; }
+    .art-c blockquote span {
+      font-weight: 400;
+      position: absolute;
+      bottom: 9px;
+      right: 80px; }
+
+.share-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+  .share-b h3 {
+    margin-right: 60px; }
+  .share-b-soc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+  .share-b a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+    .share-b a:hover {
+      background: #000; }
+    .share-b a:hover i {
+      color: #fff; }
+    .share-b a:not(:last-of-type) {
+      margin-right: 30px; }
+
+.same {
+  padding: 100px 0 80px; }
+  .same h3 {
+    margin-bottom: 55px; }
+  .same ul li {
+    border-top: 1px solid rgba(46, 46, 46, 0.15);
+    padding: 17px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+    .same ul li:last-of-type {
+      border-bottom: 1px solid rgba(46, 46, 46, 0.15); }
+    .same ul li time {
+      font-size: 13px;
+      color: rgba(46, 46, 46, 0.5);
+      margin-bottom: 5px;
+      display: inline-block; }
+    .same ul li a {
+      font-size: 15px;
+      font-weight: 600;
+      color: #2E2E2E;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+      .same ul li a:hover {
+        color: #59B1BC;
+        text-decoration: underline; }
+
+.news {
+  background: rgba(89, 177, 188, 0.11);
+  padding: 60px 0 85px; }
+  .news h3 {
+    margin-bottom: 28px; }
+  .news p:not(:last-child) {
+    margin-bottom: 50px; }
+  .news form {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .news form input:not(:last-child) {
+      margin-right: 30px; }
+
+.free-c {
+  padding: 160px 0 105px;
+  background: url("../img/free.png") no-repeat center/cover; }
+  .free-c h2 {
+    color: #fff;
+    max-width: 500px; }
+  .free-c-b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 @media screen and (max-width: 991px) {
   .a-pr {
