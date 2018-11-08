@@ -12565,9 +12565,23 @@ input {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap; }
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .info-data .star-result, .info-data .count {
     display: none; }
+  .info-data .rating {
+    margin-right: 30px; }
+  .info-data .view-count {
+    color: rgba(46, 46, 46, 0.5);
+    font-size: 13px;
+    position: relative; }
+    .info-data .view-count::before {
+      content: '\f06e';
+      font-size: 13px;
+      font-family: "Font Awesome\ 5 Free";
+      font-weight: 900; }
 
 @media screen and (max-width: 991px) {
   .a-pr {
