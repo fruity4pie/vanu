@@ -12437,7 +12437,8 @@ input {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap; }
+            flex-flow: column nowrap;
+    position: relative; }
     .same ul li:last-of-type {
       border-bottom: 1px solid rgba(46, 46, 46, 0.15); }
     .same ul li time {
@@ -12454,6 +12455,16 @@ input {
       .same ul li a:hover {
         color: #59B1BC;
         text-decoration: underline; }
+    .same ul li .view-count {
+      position: absolute;
+      right: 0;
+      bottom: 16px; }
+      .same ul li .view-count::before {
+        content: '\f06e';
+        font-size: 13px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-right: 3px; }
 
 .news {
   background: rgba(89, 177, 188, 0.11);

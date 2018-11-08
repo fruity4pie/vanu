@@ -1141,6 +1141,7 @@ input
       padding: 17px 0
       display: flex
       flex-flow: column nowrap
+      position: relative
       time
         font-size: 13px
         color: rgba(46, 46, 46, 0.5)
@@ -1154,6 +1155,16 @@ input
         &:hover
           color: #59B1BC
           text-decoration: underline
+      .view-count
+        position: absolute
+        right: 0
+        bottom: 16px
+        &::before
+          content: '\f06e'
+          font-size: 13px
+          font-family: "Font Awesome 5 Free"
+          font-weight: 900
+          margin-right: 3px
 
 .news
   background: rgba(89, 177, 188, 0.11)
