@@ -12240,7 +12240,7 @@ input {
 
 .b-blog {
   padding: 80px 0 110px; }
-  .b-blog .row:nth-of-type(1) div {
+  .b-blog .row:nth-of-type(1) > div {
     margin-bottom: 60px; }
   .b-blog img {
     width: 100%;
@@ -12555,6 +12555,12 @@ input {
       top: auto;
       left: auto;
       width: auto; }
+
+.info-data {
+  position: relative;
+  margin: 0; }
+  .info-data .star-result, .info-data .count {
+    display: none; }
 
 @media screen and (max-width: 991px) {
   .a-pr {
