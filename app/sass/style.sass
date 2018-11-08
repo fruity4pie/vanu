@@ -194,6 +194,9 @@ input
     padding: 30px 25px 0 35px
     color: #000
     display: none
+    font-size: 15px
+    line-height: 24px
+    font-weight: 400
     &.active
       display: block
   li
@@ -203,6 +206,7 @@ input
     font-weight: 600
     position: relative
     transition: all .5s
+    padding-right: 25px
     &:not(:first-of-type)
       padding-top: 20px
       &::after
@@ -211,12 +215,13 @@ input
       padding-bottom: 20px
       border-bottom: 1px solid rgba(46, 46, 46, 0.15)
     &.active
+      color: #59B1BC
       &::after
         transform: rotate(180deg)
     &::after
       content: url('../img/arrb.svg')
       position: absolute
-      top: 0
+      top: 5px
       right: 0
       transition: all .5s
     &:hover
@@ -500,7 +505,7 @@ input
   text-transform: uppercase
   text-align: center
   font-weight: 600
-  font-size: 17
+  font-size: 17px
   +frn
   justify-content: center
   align-items: center
@@ -744,6 +749,8 @@ input
       p
         margin-bottom: 20px
         font-size: 17px
+      img
+        width: 100%
   h2
     margin-bottom: 15px
 

@@ -12,6 +12,8 @@ $(document).ready(function() {
       $(this).addClass('active');
       items.find('.tabs-h').removeClass('active');
       $(this).find('.tabs-h').toggleClass('active');
+      let h = $(this).offset().top;
+      $('body,html').animate({scrollTop:h}, 1000);
     }
   })
 
