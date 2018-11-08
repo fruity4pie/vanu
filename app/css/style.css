@@ -12261,6 +12261,7 @@ input {
         width: 100%;
         min-width: 18px;
         position: absolute;
+        background: #59B1BC;
         bottom: -14px;
         display: block;
         left: 50%;
