@@ -1,5 +1,8 @@
 @import libs
 
+*
+  box-sizing: border-box
+
 =frn
   display: flex
   flex-flow: row nowrap
@@ -520,6 +523,7 @@ input
   color: #fff
   position: relative
   background: url("../img/sec1.png") no-repeat (center / cover) transparent
+  background-attachment: fixed
 
   &::before
     content: ""
@@ -771,6 +775,7 @@ input
     margin-bottom: 15px
   input
     margin: 0 auto
+    display: inline-block
     &:not(:last-of-type)
       margin-bottom: 20px
   &_2
@@ -1060,10 +1065,13 @@ input
         height: 8px
         left: 30px
         top: 8px
-
+  .table-responsive
+    margin-bottom: 60px
   iframe
     float: left
     margin-right: 50px
+    width: 100%
+    max-width: 570px
     &:not(:last-child)
       margin-bottom: 60px
 
@@ -1255,6 +1263,7 @@ input
       position: absolute
       top: -10px
       left: calc(100% + 16px)
+      display: none
 
 .contacts
   font-size: 13px
