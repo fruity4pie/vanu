@@ -12252,10 +12252,10 @@ input {
     font-size: 15px; }
     .b-blog .pagination *:not(:last-child) {
       margin-right: 20px; }
-    .b-blog .pagination .active {
+    .b-blog .pagination .current {
       color: #59B1BC;
       position: relative; }
-      .b-blog .pagination .active::before {
+      .b-blog .pagination .current::before {
         content: '';
         height: 2px;
         width: 100%;
