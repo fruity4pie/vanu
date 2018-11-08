@@ -12720,7 +12720,13 @@ input {
     float: none;
     width: 100%;
     max-width: none;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .b-blog .row:first-of-type > div {
+    margin-bottom: 30px; }
+  .b-blog time {
+    margin-bottom: 10px; }
+  .b-blog h5, .b-blog p {
+    margin-bottom: 10px; } }
 
 @media screen and (max-width: 767px) {
   .btn {
@@ -12864,7 +12870,9 @@ input {
     margin-bottom: 10px; }
   .footer .logo {
     margin-bottom: 10px;
-    display: inline-block; } }
+    display: inline-block; }
+  .b-blog {
+    padding: 30px 0; } }
 
 @media screen and (max-width: 500px) {
   .header .logo {
