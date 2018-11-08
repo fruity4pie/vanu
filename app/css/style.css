@@ -12245,7 +12245,10 @@ input {
   .b-blog .pagination {
     max-width: 255px;
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .b-blog .pagination *:not(:last-child) {
       margin-right: 20px; }
   .b-blog img {
