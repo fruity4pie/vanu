@@ -12367,7 +12367,7 @@ input {
     position: relative; }
     .art-c blockquote:not(:last-child) {
       margin-bottom: 90px; }
-    .art-c blockquote span {
+    .art-c blockquote cite {
       font-weight: 400;
       position: absolute;
       bottom: 9px;
