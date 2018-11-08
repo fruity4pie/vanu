@@ -12188,7 +12188,7 @@ input {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(24, 49, 52, 0.75)), to(rgba(24, 49, 52, 0.75)));
   background: linear-gradient(0deg, rgba(24, 49, 52, 0.75), rgba(24, 49, 52, 0.75));
   position: fixed;
-  top: -100vh;
+  top: -200%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -12706,7 +12706,7 @@ input {
 
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 32px;
     font-weight: bold;
     text-transform: uppercase; }
@@ -12719,8 +12719,32 @@ input {
     line-height: 1;
     font-weight: 600; }
   p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px; }
+  .first {
+    padding: 0;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .first p {
+      font-size: 16px;
+      line-height: 22px; }
+    .first_tnx span {
+      font-size: 60px;
+      margin-bottom: 10px; }
+    .first_tnx p {
+      margin-bottom: 20px; }
   .ben li {
     font-size: 14px;
     line-height: 22px; }
@@ -12734,6 +12758,10 @@ input {
     margin-bottom: 15px; }
   .details h3 {
     margin-bottom: 30px; } }
+
+@media screen and (max-width: 500px) {
+  .header .logo {
+    font-size: 3.9vw; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
   h1 {
