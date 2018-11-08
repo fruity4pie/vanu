@@ -12580,7 +12580,7 @@ input {
     .info-data .view-count::before {
       content: '\f06e';
       font-size: 13px;
-      font-family: "Font Awesome\ 5 Free";
+      font-family: "Font Awesome 5 Free";
       font-weight: 900; }
 
 @media screen and (max-width: 991px) {
