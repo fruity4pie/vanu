@@ -12716,12 +12716,11 @@ input {
       padding: 0; }
   .free-c h2 {
     margin-bottom: 30px; }
-  .art-c iframe:not(:last-child) {
+  .art-c iframe {
     float: none;
     width: 100%;
-    max-width: none; }
-    .art-c iframe:not(:last-child):not(:last-child) {
-      margin-right: 0; } }
+    max-width: none;
+    margin-right: 0; } }
 
 @media screen and (max-width: 767px) {
   .btn {
