@@ -11461,7 +11461,17 @@ input {
         -ms-flex-pack: start;
             justify-content: flex-start; }
   .header .socials {
-    margin: 0 80px 0 auto; }
+    margin: 0 80px 0 auto;
+    position: relative; }
+    .header .socials::before {
+      content: '';
+      height: 36px;
+      width: 1px;
+      background: #fff;
+      position: absolute;
+      display: block;
+      top: 50%;
+      right: -41px; }
     .header .socials a:nth-of-type(1) {
       margin-right: 30px; }
     .header .socials a:nth-of-type(2) {
@@ -12447,6 +12457,21 @@ input {
     position: relative; }
     .art-c blockquote:not(:last-child) {
       margin-bottom: 90px; }
+    .art-c blockquote::before, .art-c blockquote::after {
+      content: '';
+      position: absolute;
+      display: block;
+      background: url("../img/bqarr.png") no-repeat center/cover transparent;
+      width: 58px;
+      height: 48px; }
+    .art-c blockquote::before {
+      top: -33px;
+      left: -13px; }
+    .art-c blockquote::after {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      right: -13px;
+      bottom: -31px; }
     .art-c blockquote cite {
       font-weight: 400;
       position: absolute;
@@ -12723,7 +12748,6 @@ input {
     margin-right: 15px;
     font-weight: 600; }
   .info-data .rating-result {
-    margin-right: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12734,6 +12758,9 @@ input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .info-data .rating-result .mr-star-rating {
+      margin-right: 30px;
+      display: inline-block; }
   .info-data .view-count {
     color: rgba(46, 46, 46, 0.5);
     font-size: 13px;
@@ -12972,6 +12999,13 @@ input {
       margin-bottom: 35px; }
     .art-c blockquote {
       padding: 35px; }
+      .art-c blockquote::before, .art-c blockquote::after {
+        width: 36px;
+        height: 30px; }
+      .art-c blockquote::after {
+        bottom: -15px; }
+      .art-c blockquote::before {
+        top: -10px; }
       .art-c blockquote cite {
         right: 20px; }
       .art-c blockquote:not(:last-child) {
