@@ -18,7 +18,6 @@ $(document).ready(function() {
   })
 
   //Map
-
   let mapItems = $('.map-b__i');
   mapItems.on('click', function(e) {
     e.preventDefault();
@@ -100,5 +99,12 @@ $(document).ready(function() {
     }
   })
 
+
+  //rating
+  let ratingBtn = $('.vote-post a');
+  ratingBtn.on('click', function(e) {
+    e.preventDefault();
+    $(this).parent().find('.form-vote').removeClass('hidden');
+  })
 
 })

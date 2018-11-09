@@ -936,7 +936,7 @@ input
       overflow: hidden
       img
         position: relative
-        bottom: -2px
+        bottom: -3px
         width: 100%
     &-cont
       padding: 20px 0
@@ -1096,6 +1096,12 @@ input
         font-weight: 600
       &:not(:last-child)
         margin-bottom: 20px
+  ol
+    counter-reset: n
+    li
+      &::before
+        counter-increment: n
+        content: counter(n)
   ul
     li
       &::before
@@ -1345,6 +1351,8 @@ input
     margin-bottom: 10px
   .vote-post
     font-weight: 600
+    .hidden
+      display: none
     a
       display: inline-block
       margin-bottom: 10px

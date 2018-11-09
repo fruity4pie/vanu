@@ -12199,7 +12199,7 @@ input {
       overflow: hidden; }
       .faces-b-img img {
         position: relative;
-        bottom: -2px;
+        bottom: -3px;
         width: 100%; }
     .faces-b-cont {
       padding: 20px 0;
@@ -12388,6 +12388,11 @@ input {
         font-weight: 600; }
       .art-c ol li:not(:last-child), .art-c ul li:not(:last-child) {
         margin-bottom: 20px; }
+  .art-c ol {
+    counter-reset: n; }
+    .art-c ol li::before {
+      counter-increment: n;
+      content: counter(n); }
   .art-c ul li::before {
     content: '';
     width: 8px;
@@ -12664,6 +12669,8 @@ input {
 
 .vote .vote-post {
   font-weight: 600; }
+  .vote .vote-post .hidden {
+    display: none; }
   .vote .vote-post a {
     display: inline-block;
     margin-bottom: 10px; }
