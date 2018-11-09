@@ -80,7 +80,9 @@ $(document).ready(function() {
 
   btnTrigger.on('click', function(e) {
     e.preventDefault();
-    popUp.addClass('active');
+    let id = $(this).attr('href');
+    popUp.find('.b-popup-c').removeClass('active');
+    popUp.addClass('active').find(id).addClass('active');;
     $('body').addClass('active');
   })
 
