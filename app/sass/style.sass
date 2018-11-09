@@ -1220,7 +1220,7 @@ input
       time
         font-size: 13px
         color: rgba(46, 46, 46, 0.5)
-        margin-bottom: 5px
+        margin-bottom: 10px
         display: inline-block
       a
         font-size: 15px
@@ -1356,6 +1356,9 @@ input
     a
       display: inline-block
       margin-bottom: 10px
+      transition: all .3s
+      &:hover
+        color: #59b1bc
   .rating-form
     margin: 0
     form
@@ -1391,8 +1394,8 @@ input
     margin-right: 15px
     font-weight: 600
   .rating
-    margin-right: 30px
     &-result
+      margin-right: 30px
       +frn
       align-items: center
   .view-count
