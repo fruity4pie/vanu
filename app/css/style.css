@@ -11485,12 +11485,13 @@ input {
 .ben li {
   font-size: 17px;
   position: relative;
-  line-height: 27px; }
+  line-height: 27px;
+  padding-left: 42px; }
   .ben li::before {
     content: url("../img/arr.svg");
-    top: 5px;
-    position: relative;
-    margin-right: 20px; }
+    top: 4px;
+    position: absolute;
+    left: 0; }
 
 .mob-burg {
   height: 22px;
@@ -11812,7 +11813,7 @@ input {
   padding: 182px 0 50px;
   color: #fff;
   position: relative;
-  background: url("../img/sec1.png") no-repeat center/cover transparent;
+  background: url("../img/sec1.jpg") no-repeat center -500px/cover transparent;
   background-attachment: fixed; }
   .first::before {
     content: "";
@@ -11953,6 +11954,20 @@ input {
   color: #fff; }
   .examples h2, .examples h3 {
     margin-bottom: 20px; }
+  .examples h2 {
+    position: relative;
+    margin-bottom: 65px; }
+    .examples h2::before {
+      content: '';
+      width: 84px;
+      height: 4px;
+      background: #fff;
+      border-radius: 2px;
+      position: absolute;
+      bottom: -22px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
   .examples p {
     margin-bottom: 40px; }
   .examples .table-responsive {
@@ -11989,7 +12004,8 @@ input {
         font-weight: 600; }
 
 .details {
-  background: url("../img/sec5.png") no-repeat center/cover #fff;
+  background: url("../img/sec5.jpg") no-repeat center/cover #fff;
+  background-attachment: fixed;
   color: #fff;
   padding: 80px 0 90px; }
   .details h2 {
@@ -12025,7 +12041,7 @@ input {
 
 .conditions {
   padding: 100px 0 130px; }
-  .conditions .row:first-of-type .col-12 p {
+  .conditions .row:first-of-type .col-12 > p {
     margin-bottom: 65px; }
   .conditions .row:nth-of-type(2) {
     margin-bottom: 115px; }
@@ -12046,7 +12062,8 @@ input {
     padding: 35px 0 45px; }
 
 .order {
-  background: url("../img/orbg.png") no-repeat center/cover #000;
+  background: url("../img/orbg.jpg") no-repeat center/cover #000;
+  background-attachment: fixed;
   color: #fff;
   padding: 100px 0 125px; }
   .order .row:first-of-type p {
@@ -12084,6 +12101,19 @@ input {
   color: #fff; }
   .footer-top {
     margin-bottom: 35px; }
+    .footer-top .col-lg-4 a {
+      position: relative;
+      padding-left: 28px; }
+      .footer-top .col-lg-4 a::before {
+        content: '\f095';
+        font-size: 16px;
+        color: #fff;
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%) rotate(100deg);
+                transform: translateY(-50%) rotate(100deg); }
     .footer-top p {
       font-size: 11px;
       line-height: 17px;
@@ -12165,10 +12195,12 @@ input {
       max-width: 233px;
       width: 100%;
       margin: 0 auto; }
-    .faces-b-img img {
-      position: relative;
-      bottom: -2px;
-      width: 100%; }
+    .faces-b-img {
+      overflow: hidden; }
+      .faces-b-img img {
+        position: relative;
+        bottom: -2px;
+        width: 100%; }
     .faces-b-cont {
       padding: 20px 0;
       display: -webkit-box;
@@ -12535,7 +12567,8 @@ input {
 
 .free-c {
   padding: 160px 0 105px;
-  background: url("../img/free.png") no-repeat center/cover; }
+  background: url("../img/orbg.jpg") no-repeat center/cover;
+  background-attachment: fixed; }
   .free-c h2 {
     color: #fff;
     max-width: 500px; }
@@ -12569,11 +12602,17 @@ input {
       width: 100%;
       height: 100%; }
     .map-b__i {
-      position: relative;
+      position: absolute;
       width: 18px;
       top: 26.4%;
       left: 57.2%;
       cursor: pointer; }
+      .map-b__i:nth-of-type(2) {
+        top: 42%;
+        left: 55.6%; }
+      .map-b__i:nth-of-type(3) {
+        top: 69.7%;
+        left: 92.2%; }
       .map-b__i p {
         font-size: 13px; }
         .map-b__i p:first-of-type {
@@ -12591,6 +12630,8 @@ input {
       top: -10px;
       left: calc(100% + 16px);
       display: none; }
+      .map-b__c.active {
+        display: block; }
 
 .contacts {
   font-size: 13px;
@@ -12604,7 +12645,7 @@ input {
     margin-right: 15px;
     width: 20px; }
   .contacts li:not(:last-of-type) {
-    margin-bottom: 12px; }
+    margin-bottom: 23px; }
   .contacts i {
     font-size: 15px; }
   .contacts_map {
@@ -12818,7 +12859,8 @@ input {
     font-size: 14px;
     line-height: 22px; }
     .ben li::before {
-      margin-right: 10px; }
+      margin-right: 10px;
+      top: 0; }
   .license, .benefits, .examples, .details, .conditions, .map, .order, .footer, .faq {
     padding: 30px 0; }
   .license .row:first-of-type .col-md-7 {
@@ -12830,6 +12872,8 @@ input {
     margin-bottom: 25px; }
   .benefits .ben li:not(:last-of-type) {
     margin-bottom: 15px; }
+  .examples h2 {
+    margin-bottom: 40px; }
   .examples p {
     margin-bottom: 25px; }
   .details h2 {

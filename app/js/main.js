@@ -17,6 +17,20 @@ $(document).ready(function() {
     }
   })
 
+  //Map
+
+  let mapItems = $('.map-b__i');
+  mapItems.on('click', function(e) {
+    e.preventDefault();
+    let container = $(this).find('.map-b__c');
+    if(container.hasClass('active')) {
+      container.removeClass('active');
+    } else {
+      $('.map-b__c').removeClass('active');
+      container.addClass('active');
+    }
+  })
+
   //Lang
   let lang = $('.lang .lang-v a');
   lang.on('click', function(e) {

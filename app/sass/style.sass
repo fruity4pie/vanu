@@ -279,12 +279,13 @@ input
     font-size: 17px
     position: relative
     line-height: 27px
+    padding-left: 42px
 
     &::before
       content: url("../img/arr.svg")
-      top: 5px
-      position: relative
-      margin-right: 20px
+      top: 4px
+      position: absolute
+      left: 0
 
 .mob
   &-burg
@@ -527,7 +528,7 @@ input
   padding: 182px 0 50px
   color: #fff
   position: relative
-  background: url("../img/sec1.png") no-repeat (center / cover) transparent
+  background: url("../img/sec1.jpg") no-repeat (center -500px/ cover) transparent
   background-attachment: fixed
 
   &::before
@@ -657,6 +658,20 @@ input
   h2, h3
     margin-bottom: 20px
 
+  h2
+    position: relative
+    margin-bottom: 65px
+    &::before
+      content: ''
+      width: 84px
+      height: 4px
+      background: #fff
+      border-radius: 2px
+      position: absolute
+      bottom: -22px
+      left: 50%
+      transform: translateX(-50%)
+
   p
     margin-bottom: 40px
 
@@ -708,7 +723,8 @@ input
           font-weight: 600
 
 .details
-  background: url("../img/sec5.png") no-repeat (center / cover) #fff
+  background: url("../img/sec5.jpg") no-repeat (center / cover) #fff
+  background-attachment: fixed
   color: #fff
   padding: 80px 0 90px
 
@@ -741,7 +757,7 @@ input
   padding: 100px 0 130px
   .row
     &:first-of-type
-      & .col-12 p
+      & .col-12 > p
         margin-bottom: 65px
   .row
     &:nth-of-type(2)
@@ -766,7 +782,8 @@ input
     padding: 35px 0 45px
 
 .order
-  background: url('../img/orbg.png') no-repeat center/cover #000
+  background: url('../img/orbg.jpg') no-repeat center/cover #000
+  background-attachment: fixed
   color: #fff
   padding: 100px 0 125px
   .row
@@ -810,6 +827,20 @@ input
   color: #fff
   &-top
     margin-bottom: 35px
+    .col-lg-4
+      a
+        position: relative
+        padding-left: 28px
+        &::before
+          content: '\f095'
+          font-size: 16px
+          color: #fff
+          font-family: "Font Awesome 5 Free"
+          position: absolute
+          top: 50%
+          left: 0
+          transform: translateY(-50%) rotate(100deg)
+
     p
       font-size: 11px
       line-height: 17px
@@ -902,6 +933,7 @@ input
       width: 100%
       margin: 0 auto
     &-img
+      overflow: hidden
       img
         position: relative
         bottom: -2px
@@ -1225,7 +1257,8 @@ input
 
 .free-c
   padding: 160px 0 105px
-  background: url('../img/free.png') no-repeat center / cover
+  background: url('../img/orbg.jpg') no-repeat center / cover
+  background-attachment: fixed
   h2
     color: #fff
     max-width: 500px
@@ -1249,11 +1282,17 @@ input
       width: 100%
       height: 100%
     &__i
-      position: relative
+      position: absolute
       width: 18px
       top: 26.4%
       left: 57.2%
       cursor: pointer
+      &:nth-of-type(2)
+        top: 42%
+        left: 55.6%
+      &:nth-of-type(3)
+        top: 69.7%
+        left: 92.2%
       p
         font-size: 13px
         &:first-of-type
@@ -1271,6 +1310,8 @@ input
       top: -10px
       left: calc(100% + 16px)
       display: none
+      &.active
+        display: block
 
 .contacts
   font-size: 13px
@@ -1285,7 +1326,7 @@ input
       margin-right: 15px
       width: 20px
     &:not(:last-of-type)
-      margin-bottom: 12px
+      margin-bottom: 23px
   i
     font-size: 15px
   &_map
