@@ -12661,52 +12661,54 @@ input {
       display: none; }
       .map-b__c.active {
         display: block; }
-    .map-b_m svg, .map-b_m img {
-      display: none; }
-    .map-b_m .map-b__i {
-      position: relative;
-      text-transform: uppercase;
-      width: 100%; }
-    .map-b_m .map-b__t {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding: 10px 15px 10px 0;
-      position: relative; }
-      .map-b_m .map-b__t::before, .map-b_m .map-b__t::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
-        height: 2px;
-        width: 15px;
-        background: #000;
-        display: block;
-        right: 0; }
-      .map-b_m .map-b__t::before {
-        -webkit-transform: rotate(90deg);
-                transform: rotate(90deg);
-        top: 49%; }
-      .map-b_m .map-b__t.active::before {
+    .map-b_m {
+      min-height: auto; }
+      .map-b_m svg, .map-b_m img {
         display: none; }
-    .map-b_m .map-b__c {
-      position: relative;
-      top: auto;
-      left: auto; }
-    .map-b_m .contacts {
-      padding: 0;
-      margin: 0; }
+      .map-b_m .map-b__i {
+        position: relative;
+        text-transform: uppercase;
+        width: 100%; }
+      .map-b_m .map-b__t {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 10px 15px 10px 0;
+        position: relative; }
+        .map-b_m .map-b__t::before, .map-b_m .map-b__t::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          height: 2px;
+          width: 15px;
+          background: #000;
+          display: block;
+          right: 0; }
+        .map-b_m .map-b__t::before {
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg);
+          top: 49%; }
+        .map-b_m .map-b__t.active::before {
+          display: none; }
+      .map-b_m .map-b__c {
+        position: relative;
+        top: auto;
+        left: auto; }
+      .map-b_m .contacts {
+        padding: 0;
+        margin: 0; }
 
 .contacts {
   font-size: 13px;
@@ -13171,7 +13173,9 @@ input {
   .experience {
     padding: 30px 0; }
     .experience h2 {
-      margin-bottom: 25px; } }
+      margin-bottom: 25px; }
+  .map h2 {
+    margin-bottom: 25px; } }
 
 @media screen and (max-width: 500px) {
   .header .logo {
