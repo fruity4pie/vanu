@@ -11694,6 +11694,8 @@ input {
       margin-bottom: 40px; }
   .mob-phone__nav li:not(:last-of-type) {
     margin-bottom: 15px; }
+  .mob-phone__nav .socials::before {
+    display: none; }
 
 .b-c {
   display: -webkit-box;
