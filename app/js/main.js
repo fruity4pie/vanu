@@ -30,7 +30,7 @@ $(document).ready(function() {
       $('.map-b__t').removeClass('active');
       container.addClass('active');
       $(this).find('.map-b__t').addClass('active');
-      if($(this).parent().hasClass(map-b_m)) {
+      if($(this).parent().hasClass('map-b_m')) {
         let h = $(this).parent().offset().top;
         $('body,html').animate({scrollTop:h}, 1000);
       }
