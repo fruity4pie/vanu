@@ -21,7 +21,7 @@ $(document).ready(function() {
   let mapItems = $('.map-b__i');
   mapItems.on('click', function(e) {
     e.preventDefault();
-    if(e.target.hasClass('map-b__i')) {
+    if($(e.target).hasClass('map-b__i')) {
       let container = $(this).find('.map-b__c');
       if(container.hasClass('active')) {
         container.removeClass('active');
