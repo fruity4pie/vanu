@@ -31,7 +31,7 @@ $(document).ready(function() {
       container.addClass('active');
       $(this).find('.map-b__t').addClass('active');
       if($(this).parent().hasClass('map-b_m')) {
-        let h = $(this).parent().offset().top;
+        let h = $(this).offset().top;
         $('body,html').animate({scrollTop:h}, 1000);
       }
     }
