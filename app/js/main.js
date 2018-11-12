@@ -81,8 +81,7 @@ $(document).ready(function() {
   btnTrigger.on('click', function(e) {
     e.preventDefault();
     let id = $(this).attr('href');
-    console.log(id)
-    $(id).addClass('active');
+    $(`#${id}`).addClass('active');
     $('body').addClass('active');
   })
 
