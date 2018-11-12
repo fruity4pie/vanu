@@ -12681,7 +12681,7 @@ input {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      padding: 10px 15px;
+      padding: 10px 15px 10px 0;
       position: relative; }
       .map-b_m .map-b__t::before, .map-b_m .map-b__t::after {
         content: '';
@@ -12698,6 +12698,8 @@ input {
         -webkit-transform: rotate(90deg);
                 transform: rotate(90deg);
         top: 49%; }
+      .map-b_m .map-b__t.active::before {
+        display: none; }
     .map-b_m .map-b__c {
       position: relative;
       top: auto;

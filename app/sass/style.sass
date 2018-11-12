@@ -1353,7 +1353,7 @@ input
         flex-flow: row nowrap
         justify-content: flex-start
         align-items: center
-        padding: 10px 15px
+        padding: 10px 15px 10px 0
         position: relative
         &::before, &::after
           content: ''
@@ -1368,6 +1368,9 @@ input
         &::before
           transform: rotate(90deg)
           top: 49%
+        &.active
+          &::before
+            display: none
       .map-b__c
         position: relative
         top: auto
