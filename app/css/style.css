@@ -11849,6 +11849,7 @@ input {
   .first_tnx {
     height: 100vh;
     background: url("../img/sec1.jpg") no-repeat center/cover transparent;
+    background-attachment: fixed;
     padding: 0;
     display: -ms-flex;
     display: -webkit-box;
@@ -12657,6 +12658,8 @@ input {
       display: none; }
       .map-b__c.active {
         display: block; }
+    .map-b_m svg, .map-b_m img {
+      display: none; }
 
 .contacts {
   font-size: 13px;
