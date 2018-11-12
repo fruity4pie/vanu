@@ -12665,11 +12665,36 @@ input {
       display: none; }
     .map-b_m .map-b__i {
       position: relative;
-      height: 50px;
-      padding-left: 15px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      width: 100%; }
     .map-b_m .map-b__t {
-      display: block; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 10px 15px;
+      position: relative; }
+      .map-b_m .map-b__t::before, .map-b_m .map-b__t::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        height: 2px;
+        width: 15px;
+        background: #000;
+        display: block; }
+      .map-b_m .map-b__t::before {
+        trasnform: rotate(90deg); }
 
 .contacts {
   font-size: 13px;
