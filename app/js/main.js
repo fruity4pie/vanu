@@ -23,7 +23,7 @@ $(document).ready(function() {
     e.preventDefault();
     let mapCont = e.target.closest('.map-b__c') || e.target.closest('.map-b__c *:not(a)');
     let mapContAnchors = e.target.closest('.map-b__c a');
-    console.log(mapCont)
+
     if($(this).hasClass('active') && !mapCont) {
       $(this).removeClass('active');
     } else {
