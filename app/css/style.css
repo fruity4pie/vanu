@@ -12638,7 +12638,8 @@ input {
       height: 100%; }
     .map-b__i {
       position: absolute;
-      width: 18px; }
+      width: 18px;
+      cursor: pointer; }
       .map-b__i p {
         font-size: 13px; }
         .map-b__i p:first-of-type {
@@ -12646,6 +12647,8 @@ input {
           font-weight: 600; }
         .map-b__i p:last-of-type {
           margin-bottom: 15px; }
+    .map-b__t {
+      display: none; }
     .map-b__c {
       background: #59B1BC;
       padding: 14px 18px;
@@ -12660,6 +12663,13 @@ input {
         display: block; }
     .map-b_m svg, .map-b_m img {
       display: none; }
+    .map-b_m .map-b__i {
+      position: relative;
+      height: 50px;
+      padding-left: 15px;
+      text-transform: uppercase; }
+    .map-b_m .map-b__t {
+      display: block; }
 
 .contacts {
   font-size: 13px;
