@@ -100,7 +100,6 @@ $(document).ready(function() {
     }
   })
 
-
   //rating
   let ratingBtn = $('.vote-post a');
   ratingBtn.on('click', function(e) {
@@ -108,4 +107,17 @@ $(document).ready(function() {
     $(this).parent().find('.form-vote').removeClass('hidden');
   })
 
-})
+  //mobMap
+  // let mapItems = $('.map-b__i');
+  // mapItems.on('click', function(e) {
+  //   e.preventDefault();
+  //   let innerItem = $(this).find('.map-b__c');
+  //   if(innerItem.hasClass('active')) {
+  //     innerItem.removeClass('active');
+  //   } else {
+  //     mapItems.find('.map-b__c').removeClass('active');
+  //     innerItem.addClass('active');
+  //   }
+  // })
+
+});
