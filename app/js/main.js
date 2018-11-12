@@ -24,16 +24,16 @@ $(document).ready(function() {
     let container = $(this).find('.map-b__c');
     if(container.hasClass('active')) {
       container.removeClass('active');
-      $(this).find('.map-b__t').removeClass('active');
+      // $(this).find('.map-b__t').removeClass('active');
     } else {
       $('.map-b__c').removeClass('active');
-      $('.map-b__t').removeClass('active');
+      // $('.map-b__t').removeClass('active');
       container.addClass('active');
-      $(this).find('.map-b__t').addClass('active');
-      if($(this).parent().hasClass('map-b_m')) {
-        let h = $(this).offset().top;
-        $('body,html').animate({scrollTop:h}, 1000);
-      }
+      // $(this).find('.map-b__t').addClass('active');
+      // if($(this).parent().hasClass('map-b_m')) {
+      //   let h = $(this).offset().top;
+      //   $('body,html').animate({scrollTop:h}, 1000);
+      // }
     }
   })
 
