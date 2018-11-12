@@ -12697,7 +12697,7 @@ input {
       .map-b_m .map-b__t::before {
         -webkit-transform: rotate(90deg);
                 transform: rotate(90deg);
-        top: -49%; }
+        top: 49%; }
     .map-b_m .map__b {
       position: relative;
       top: auto;
