@@ -21,11 +21,21 @@ $(document).ready(function() {
   let mapItems = $('.map-b__i');
   mapItems.on('click', function(e) {
     e.preventDefault();
-    let container = $(this).find('.map-b__c');
-    if($(e.target).hasClass('map-b__i')) {
-      container.toggleClass('active');
-
+    let mapCont = e.target.closest('.map-b__c') || e.target.closest('.map-b__c *:not(a)');
+    let mapContAnchors = e.target.closest('.map-b__c a');
+    console.log(mapCont)
+    if($(this).hasClass('active') && !mapCont) {
+      $(this).removeClass('active');
+    } else {
+      e.stopImmediatePropagation();
+      mapItems.removeClass('active');
+      $(this).addClass('active');
+      if(!mapContAnchors) return;
+      if(mapContAnchors) {
+        window.location.href = mapContAnchors.href;
+      }
     }
+
   })
 
   //Lang

@@ -12650,6 +12650,8 @@ input {
           font-weight: 600; }
         .map-b__i p:last-of-type {
           margin-bottom: 15px; }
+      .map-b__i.active .map-b__c {
+        display: block; }
     .map-b__t {
       display: none; }
     .map-b__c {
