@@ -12979,7 +12979,9 @@ input {
     padding: 20px 15px;
     margin-bottom: 30px; }
     .details .ben li {
-      line-height: 26px; }
+      line-height: 22px; }
+      .details .ben li:not(:last-of-type) {
+        margin-bottom: 10px; }
   .conditions .row:first-of-type .col-12 p {
     margin-bottom: 20px; }
   .conditions .row:nth-of-type(2) {
